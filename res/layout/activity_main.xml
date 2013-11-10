@@ -232,7 +232,8 @@
         android:layout_height="wrap_content"
         android:layout_centerVertical="true"
         android:layout_toRightOf="@+id/plusButton"
-        android:text="-" />
+        android:text="-"
+        android:onClick="binaryEvent" />
 
     <Button
         android:id="@+id/plusButton"
@@ -240,6 +241,7 @@
         android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/button00"
         android:layout_centerVertical="true"
-        android:text="+" />
+        android:text="+"
+        android:onClick="binaryEvent" />
 
 </RelativeLayout>
