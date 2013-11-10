@@ -42,9 +42,15 @@ public final class R {
         public static final int Button13=0x7f09000d;
         public static final int Button14=0x7f090009;
         public static final int Button15=0x7f090008;
-        public static final int action_settings=0x7f090011;
+        public static final int action_settings=0x7f090017;
         public static final int button00=0x7f090001;
-        public static final int spinner1=0x7f090010;
+        public static final int button2=0x7f090013;
+        public static final int button3=0x7f090014;
+        public static final int minusButton=0x7f090015;
+        public static final int plusButton=0x7f090016;
+        public static final int spinner1=0x7f090011;
+        public static final int textView1=0x7f090010;
+        public static final int toHexButton=0x7f090012;
     }
     public static final class layout {
         public static final int activity_main=0x7f030000;

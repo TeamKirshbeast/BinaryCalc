@@ -16,6 +16,7 @@
         android:layout_alignBaseline="@+id/button00"
         android:layout_alignBottom="@+id/button00"
         android:layout_toRightOf="@+id/button00"
+        android:onClick="numberSelected"
         android:text="1" />
 
     <Button
@@ -26,6 +27,7 @@
         android:layout_alignBaseline="@+id/Button01"
         android:layout_alignBottom="@+id/Button01"
         android:layout_toRightOf="@+id/Button01"
+        android:onClick="numberSelected"
         android:text="2" />
 
     <Button
@@ -36,6 +38,7 @@
         android:layout_alignBaseline="@+id/Button02"
         android:layout_alignBottom="@+id/Button02"
         android:layout_toRightOf="@+id/Button02"
+        android:onClick="numberSelected"
         android:text="3" />
 
     <Button
@@ -46,6 +49,7 @@
         android:layout_alignBaseline="@+id/Button07"
         android:layout_alignBottom="@+id/Button07"
         android:layout_toRightOf="@+id/Button01"
+        android:onClick="numberSelected"
         android:text="6" />
 
     <Button
@@ -56,6 +60,7 @@
         android:layout_alignBaseline="@+id/Button06"
         android:layout_alignBottom="@+id/Button06"
         android:layout_toRightOf="@+id/button00"
+        android:onClick="numberSelected"
         android:text="5" />
 
     <Button
@@ -66,6 +71,7 @@
         android:layout_alignBaseline="@+id/Button05"
         android:layout_alignBottom="@+id/Button05"
         android:layout_toLeftOf="@+id/Button01"
+        android:onClick="numberSelected"
         android:text="4" />
 
     <Button
@@ -76,6 +82,7 @@
         android:layout_alignBaseline="@+id/Button14"
         android:layout_alignBottom="@+id/Button14"
         android:layout_alignLeft="@+id/Button11"
+        android:onClick="numberSelected"
         android:text="f" />
 
     <Button
@@ -85,6 +92,7 @@
         android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/Button08"
         android:layout_alignParentBottom="true"
+        android:onClick="numberSelected"
         android:text="c" />
 
     <Button
@@ -95,6 +103,7 @@
         android:layout_alignBaseline="@+id/Button12"
         android:layout_alignBottom="@+id/Button12"
         android:layout_toRightOf="@+id/Button12"
+        android:onClick="numberSelected"
         android:text="d" />
 
     <Button
@@ -105,6 +114,7 @@
         android:layout_alignBaseline="@+id/Button13"
         android:layout_alignBottom="@+id/Button13"
         android:layout_toRightOf="@+id/Button13"
+        android:onClick="numberSelected"
         android:text="e" />
 
     <Button
@@ -115,6 +125,7 @@
         android:layout_alignBaseline="@+id/Button09"
         android:layout_alignBottom="@+id/Button09"
         android:layout_toLeftOf="@+id/Button15"
+        android:onClick="numberSelected"
         android:text="a" />
 
     <Button
@@ -124,6 +135,7 @@
         android:layout_height="wrap_content"
         android:layout_above="@+id/Button15"
         android:layout_alignLeft="@+id/Button07"
+        android:onClick="numberSelected"
         android:text="b" />
 
     <Button
@@ -134,6 +146,7 @@
         android:layout_alignBaseline="@+id/Button09"
         android:layout_alignBottom="@+id/Button09"
         android:layout_toLeftOf="@+id/Button09"
+        android:onClick="numberSelected"
         android:text="8" />
 
     <Button
@@ -143,6 +156,7 @@
         android:layout_height="wrap_content"
         android:layout_above="@+id/Button13"
         android:layout_toLeftOf="@+id/Button10"
+        android:onClick="numberSelected"
         android:text="9" />
 
     <Button
@@ -152,6 +166,7 @@
         android:layout_height="wrap_content"
         android:layout_above="@+id/Button11"
         android:layout_alignLeft="@+id/Button03"
+        android:onClick="numberSelected"
         android:text="7" />
 
     <Button
@@ -161,16 +176,70 @@
         android:layout_height="wrap_content"
         android:layout_above="@+id/Button04"
         android:layout_alignParentLeft="true"
-        android:text="0" />
+        android:text="0"
+        android:onClick="numberSelected"
+        />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/button00"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/spinner1"
+        android:layout_marginTop="18dp"
+        android:height="150dp"
+        android:text="" />
 
     <Spinner
         android:id="@+id/spinner1"
         style="@array/choices"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/Button03"
-        android:layout_alignTop="@+id/Button03"
+        android:layout_above="@+id/Button03"
         android:layout_toRightOf="@+id/Button03"
-        android:entries="@array/choices" />
+        android:entries="@array/choices"
+        
+         />
+
+    <Button
+        android:id="@+id/toHexButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/spinner1"
+        android:layout_alignTop="@+id/Button03"
+        android:text="To Hex" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/Button07"
+        android:layout_toRightOf="@+id/Button11"
+        android:text="To Dec" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/button2"
+        android:layout_below="@+id/button2"
+        android:text="To Bin" />
+
+    <Button
+        android:id="@+id/minusButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/plusButton"
+        android:text="-" />
+
+    <Button
+        android:id="@+id/plusButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/button00"
+        android:layout_centerVertical="true"
+        android:text="+" />
 
 </RelativeLayout>
